@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Garden salad">
+  <rect width="480" height="360" fill="#f5f9f4" />
+  <ellipse cx="240" cy="230" rx="190" ry="70" fill="#d9eed5" />
+  <circle cx="180" cy="190" r="32" fill="#a1c181" />
+  <circle cx="260" cy="160" r="28" fill="#f3d49b" />
+  <circle cx="310" cy="220" r="22" fill="#e7a77b" />
+  <path d="M130 240 c40 -20 80 -20 120 -5 c22 8 44 10 68 8" stroke="#7a9a63" stroke-width="16" fill="none" stroke-linecap="round" />
+  <path d="M150 200 q45 -40 95 -22" stroke="#609247" stroke-width="14" fill="none" stroke-linecap="round" />
+</svg>

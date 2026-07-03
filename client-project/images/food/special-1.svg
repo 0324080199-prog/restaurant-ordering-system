@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Restaurant dining special 1">
+  <rect width="480" height="360" fill="#f5f1e8" />
+  <rect x="80" y="120" width="320" height="160" rx="32" fill="#e6d0b1" />
+  <circle cx="160" cy="180" r="30" fill="#c45f41" />
+  <circle cx="240" cy="170" r="28" fill="#e8b973" />
+  <circle cx="320" cy="190" r="34" fill="#ffe1b2" />
+  <rect x="100" y="220" width="120" height="18" rx="9" fill="#b47a51" />
+  <path d="M220 130 L250 80 L290 140" stroke="#8a6234" stroke-width="12" fill="none" stroke-linecap="round" />
+  <path d="M240 110 q18 -6 30 8" stroke="#5c3b22" stroke-width="10" fill="none" stroke-linecap="round" />
+</svg>

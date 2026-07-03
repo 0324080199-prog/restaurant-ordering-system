@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Ghanaian street food appetizer platter">
+  <rect width="560" height="420" fill="#f9f5ee" />
+  <path d="M100 310 q90 -100 180 -80 q90 20 140 80" fill="#f1d3a3" />
+  <path d="M130 280 c35 -45 80 -55 120 -30" stroke="#b1642f" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M170 250 c16 -18 42 -22 64 -8" stroke="#d05f28" stroke-width="14" fill="none" stroke-linecap="round" />
+  <circle cx="225" cy="285" r="18" fill="#f2b65f" />
+  <circle cx="280" cy="285" r="16" fill="#f8d16a" />
+  <circle cx="330" cy="280" r="14" fill="#d9a86e" />
+  <rect x="250" y="205" width="120" height="40" rx="16" fill="#c96e33" />
+  <path d="M285 223 c24 -16 42 -10 60 10" stroke="#8b3f1e" stroke-width="12" fill="none" stroke-linecap="round" />
+</svg>

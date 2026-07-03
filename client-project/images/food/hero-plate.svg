@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Gourmet restaurant dish">
+  <defs>
+    <linearGradient id="plateGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7efd0" />
+      <stop offset="100%" stop-color="#d6c39c" />
+    </linearGradient>
+    <linearGradient id="foodGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#c94b4b" />
+      <stop offset="100%" stop-color="#e6a14f" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="#0f1621" />
+  <ellipse cx="320" cy="320" rx="280" ry="90" fill="#1c2532" opacity="0.85" />
+  <ellipse cx="320" cy="280" rx="240" ry="60" fill="url(#plateGrad)" />
+  <path d="M220 220 c60 -50 160 -50 220 0 c20 10 20 40 0 50 c-35 20 -100 20 -155 0 c-22 -8 -22 -44 0 -50" fill="url(#foodGrad)" />
+  <path d="M300 190 c10 -20 45 -30 80 -18 c18 5 16 28 -3 31 c-26 5 -46 5 -68 0 c-16 -3 -23 -14 -9 -13" fill="#fff3d0" opacity="0.9" />
+  <circle cx="300" cy="230" r="12" fill="#fde3b7" />
+  <circle cx="360" cy="220" r="10" fill="#f8d29c" />
+  <path d="M232 270 q40 25 80 18" stroke="#9c7142" stroke-width="8" fill="none" stroke-linecap="round" />
+</svg>

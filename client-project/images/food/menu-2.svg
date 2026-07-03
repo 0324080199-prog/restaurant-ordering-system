@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Waakye bowl with fried fish">
+  <rect width="480" height="360" fill="#f5f1e8" />
+  <ellipse cx="240" cy="230" rx="180" ry="60" fill="#d0a46c" />
+  <path d="M180 180 c30 -35 80 -40 120 -18 c30 16 40 40 20 58 c-25 22 -90 24 -118 12 c-16 -7 -18 -25 -22 -52" fill="#e3c296" />
+  <path d="M200 220 c32 -14 60 -20 90 -6" stroke="#a56c3d" stroke-width="14" fill="none" stroke-linecap="round" />
+  <path d="M284 182 c20 -16 40 -12 54 10" stroke="#6c4226" stroke-width="12" fill="none" stroke-linecap="round" />
+  <circle cx="338" cy="208" r="12" fill="#fde3b7" />
+</svg>

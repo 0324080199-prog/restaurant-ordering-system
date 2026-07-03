@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory Bites Admin</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <main class="admin-shell">
+    <div class="admin-panel" id="adminPanel">
+      <section class="admin-login" id="adminLogin">
+        <div class="login-card">
+          <div class="login-brand">
+            <span>SB</span>
+            <h1>Admin Login</h1>
+          </div>
+          <p>Enter your credentials to access the admin dashboard.</p>
+          <form id="loginForm" class="login-form">
+            <label for="adminUser">Username</label>
+            <input id="adminUser" name="adminUser" type="text" autocomplete="username" placeholder="admin" required />
+            <label for="adminPass">Password</label>
+            <input id="adminPass" name="adminPass" type="password" autocomplete="current-password" placeholder="••••••••" required />
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <p class="login-error" id="loginError"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="admin-dashboard hidden" id="adminDashboard">
+        <aside class="sidebar">
+          <div class="sidebar-brand">
+            <span>SB</span>
+            <div>
+              <h2>Savory Bites</h2>
+              <p>Admin Dashboard</p>
+            </div>
+          </div>
+          <nav class="sidebar-nav" id="sidebarNav">
+            <button class="nav-item active" data-target="dashboardSection">Dashboard</button>
+            <button class="nav-item" data-target="menuSection">Manage Menu</button>
+            <button class="nav-item" data-target="ordersSection">View Orders</button>
+          </nav>
+          <button id="logoutButton" class="btn btn-secondary logout-button">Logout</button>
+        </aside>
+
+        <section class="dashboard-content">
+          <header class="dashboard-header">
+            <div>
+              <h1>Admin Dashboard</h1>
+              <p>Monitor orders, manage menu items, and review revenue.</p>
+            </div>
+            <div class="header-meta">
+              <div>
+                <span>Total orders</span>
+                <strong id="cardTotalOrders">0</strong>
+              </div>
+              <div>
+                <span>Pending orders</span>
+                <strong id="cardPendingOrders">0</strong>
+              </div>
+            </div>
+          </header>
+
+          <section class="card-grid">
+            <article class="dashboard-card">
+              <h2>Total Orders</h2>
+              <p id="totalOrders">0</p>
+            </article>
+            <article class="dashboard-card">
+              <h2>Pending Orders</h2>
+              <p id="pendingOrders">0</p>
+            </article>
+            <article class="dashboard-card">
+              <h2>Revenue</h2>
+              <p id="revenueTotal">$0.00</p>
+            </article>
+            <article class="dashboard-card">
+              <h2>Customers</h2>
+              <p id="customerCount">0</p>
+            </article>
+          </section>
+
+          <section class="section-panel active" id="dashboardSection">
+            <div class="section-header">
+              <h2>Overview</h2>
+              <p>Quick summary of restaurant performance.</p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span>Order Volume</span>
+                <strong id="statOrders">0</strong>
+              </div>
+              <div class="stat-box">
+                <span>Revenue</span>
+                <strong id="statRevenue">$0.00</strong>
+              </div>
+              <div class="stat-box">
+                <span>Open Tickets</span>
+                <strong id="statPending">0</strong>
+              </div>
+              <div class="stat-box">
+                <span>Active Customers</span>
+                <strong id="statCustomers">0</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-panel" id="menuSection">
+            <div class="section-header">
+              <div>
+                <h2>Manage Menu</h2>
+                <p>Add, edit, or delete food items.</p>
+              </div>
+              <button class="btn btn-primary" id="openAddFood">Add Food</button>
+            </div>
+            <div class="menu-management">
+              <div class="food-form-card" id="foodFormCard">
+                <h3 id="foodFormTitle">Add Food Item</h3>
+                <form id="foodForm">
+                  <input type="hidden" id="foodId" />
+                  <label for="foodName">Food Name</label>
+                  <input id="foodName" type="text" placeholder="Enter dish name" required />
+                  <label for="foodCategory">Category</label>
+                  <input id="foodCategory" type="text" placeholder="Burger, Pizza, Rice, Drinks, Desserts" required />
+                  <label for="foodPrice">Price</label>
+                  <input id="foodPrice" type="number" min="0" step="0.01" placeholder="0.00" required />
+                  <label for="foodDescription">Description</label>
+                  <textarea id="foodDescription" rows="3" placeholder="Short description"></textarea>
+                  <label for="foodImage">Image URL</label>
+                  <input id="foodImage" type="url" placeholder="images/food/menu-1.svg" />
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Item</button>
+                    <button type="button" id="cancelFood" class="btn btn-secondary">Cancel</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="food-table-wrapper">
+                <table class="data-table" id="menuTable">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>Price</th>
+                      <th>Description</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-panel" id="ordersSection">
+            <div class="section-header">
+              <h2>View Orders</h2>
+              <p>Track orders and monitor status updates.</p>
+            </div>
+            <div class="order-list-wrapper">
+              <table class="data-table" id="ordersTable">
+                <thead>
+                  <tr>
+                    <th>Order</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div></div>
+      <div></div>
+      <a href="#" class="footer-credit" aria-label="Design by Samuel Kay (SKTech)">Design by Samuel Kay (SKTech)</a>
+    </div>
+  </footer>
+  <script src="js/admin.js"></script>
+</body>
+</html>

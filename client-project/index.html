@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory Bites Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-pvR8tOcgJ+0K9E+M8sHFOtoE0sYwKdH6j1zPqH0bKzv0X2paY2Tg4u+1Mk1a90+M1BvnUGf1UsLXK2EEeU3f6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">SB</span>
+        <div>
+          <h1>Savory Bites</h1>
+          <p>Modern restaurant dining</p>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Open navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="favorite-display" aria-label="Favorite meals">
+        <i class="fas fa-heart"></i>
+        <span id="favoriteCount">0</span>
+      </div>
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+        <div class="mobile-menu-panel">
+          <button id="closeMobileMenu" class="modal-close" type="button" aria-label="Close navigation"><i class="fas fa-times"></i></button>
+          <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <button id="cartToggle" class="cart-btn" type="button" aria-label="View cart">
+        <i class="fas fa-shopping-basket"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy container">
+        <span class="eyebrow">Fine dining experience</span>
+        <h2>Flavors designed for every craving.</h2>
+        <p>Discover chef-crafted plates, seasonal ingredients, and an unforgettable evening of modern restaurant cuisine.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#contact" class="btn btn-secondary">Book a Table</a>
+        </div>
+      </div>
+      <div class="hero-media">
+      <img src="images/food/ghanajollof.jpg" alt="Ghanaian jollof rice hero" />
+    </div>
+          <h2>A welcoming restaurant crafted for good food and great company.</h2>
+          <p>At Savory Bites, we combine bold flavors, seasonal produce, and refined plating to create meals that feel both luxurious and approachable.</p>
+          <div class="about-list">
+            <div>
+              <strong>Seasonal menus</strong>
+              <p>Thoughtful dishes inspired by fresh ingredients and chef creativity.</p>
+            </div>
+            <div>
+              <strong>Cozy atmosphere</strong>
+              <p>Inviting interiors and attentive service for every occasion.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/food/ghdinning.jpg" alt="Ghanaian dining scene" />
+        </div>
+      </div>
+    </section>
+
+    <section class="menu container" id="menu">
+      <div class="section-heading">
+        <span>Featured menu</span>
+        <h2>Signature plates our guests love.</h2>
+      </div>
+      <div class="menu-search-wrap">
+        <div class="menu-filters" id="menuFilters">
+          <button type="button" class="menu-filter-button active" data-category="all">All</button>
+          <button type="button" class="menu-filter-button" data-category="burger">Burger</button>
+          <button type="button" class="menu-filter-button" data-category="pizza">Pizza</button>
+          <button type="button" class="menu-filter-button" data-category="rice">Rice</button>
+          <button type="button" class="menu-filter-button" data-category="drinks">Drinks</button>
+          <button type="button" class="menu-filter-button" data-category="desserts">Desserts</button>
+        </div>
+        <div class="menu-search-field">
+          <input id="menuSearch" class="menu-search" type="search" placeholder="Search food, category, description..." aria-label="Search menu items" />
+          <p id="menuSearchNoResults" class="no-results">No menu items match your search.</p>
+        </div>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card">
+          <img src="images/food/download.jpg" alt="Jollof rice with grilled chicken" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Rice Dish</span>
+            <h3>Jollof Rice & Grilled Chicken</h3>
+            <p>Smoky tomato rice tossed with spices, served with tender grilled chicken and fried plantain.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.9</span>
+              <span class="time"><i class="fas fa-clock"></i>25 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵32</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="1" data-name="Jollof Rice & Grilled Chicken" data-price="32" data-image="https://source.unsplash.com/featured/640x480/?jollof,rice,chicken">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/food/images3.jpg" alt="Waakye bowl with fried fish" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Rice Dish</span>
+            <h3>Waakye Bowl</h3>
+            <p>Fluffy rice and beans served with fried fish, boiled egg, gari, and spicy shito.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.8</span>
+              <span class="time"><i class="fas fa-clock"></i>20 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵26</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="2" data-name="Waakye Bowl" data-price="26" data-image="https://source.unsplash.com/featured/640x480/?waakye,beans,food">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/food/bt.jpg" alt="Grilled tilapia with banku" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Seafood</span>
+            <h3>Banku & Grilled Tilapia</h3>
+            <p>Classic coastal favorite served with pepper sauce, sliced onions, and fresh greens.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.7</span>
+              <span class="time"><i class="fas fa-clock"></i>22 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵29</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="3" data-name="Banku & Grilled Tilapia" data-price="29" data-image="https://source.unsplash.com/featured/640x480/?banku,tilapia,fish">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/food/kk.jpg" alt="Kelewele fried plantain" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Snacks</span>
+            <h3>Spicy Kelewele</h3>
+            <p>Caramelized fried plantain tossed in ginger, chili, cinnamon, and nutmeg seasoning.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.6</span>
+              <span class="time"><i class="fas fa-clock"></i>12 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵18</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="4" data-name="Spicy Kelewele" data-price="18" data-image="https://source.unsplash.com/featured/640x480/?kelewele,plantain">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/food/ck.jpg" alt="Chinchinga skewers" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Street Food</span>
+            <h3>Chinchinga Skewers</h3>
+            <p>Spicy grilled meat skewers brushed with peppery barbecue sauce and served with slices of onions.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.8</span>
+              <span class="time"><i class="fas fa-clock"></i>18 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵21</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="5" data-name="Chinchinga Skewers" data-price="21" data-image="https://source.unsplash.com/featured/640x480/?skewers,barbecue">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/food/coco.jpg" alt="Cocoa banana fudge" />
+          <div class="menu-card-content">
+            <span class="menu-card-tag">Dessert</span>
+            <h3>Cocoa Banana Fudge</h3>
+            <p>Rich Ghanaian cocoa-infused fudge topped with caramelized banana and toasted nuts.</p>
+            <div class="menu-card-meta">
+              <span class="rating"><i class="fas fa-star"></i>4.9</span>
+              <span class="time"><i class="fas fa-clock"></i>15 min</span>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">GH₵14</span>
+              <button class="btn btn-primary add-to-cart" type="button" data-id="6" data-name="Cocoa Banana Fudge" data-price="14" data-image="https://source.unsplash.com/featured/640x480/?banana,dessert,chocolate">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials container" id="testimonials">
+      <div class="section-heading">
+        <span>Testimonials</span>
+        <h2>What our guests are saying.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>�The flavors were elevated and beautiful. Every bite felt thoughtfully prepared and my entire group was impressed.�</p>
+          <div>
+            <strong>Olivia M.</strong>
+            <span>Food lover</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p>�A perfect mix of sophistication and comfort. The service was warm and the meal was one of the best I've had in the city.�</p>
+          <div>
+            <strong>James T.</strong>
+            <span>Regular guest</span>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p>�We celebrated a special evening here and the whole experience was fantastic from start to finish.�</p>
+          <div>
+            <strong>Sophia L.</strong>
+            <span>Restaurant enthusiast</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery container" id="gallery">
+      <div class="section-heading">
+        <span>Gallery</span>
+        <h2>A visual taste of our menu.</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="images/food/plater.jpg" alt="Ghanaian appetizer platter" />
+        <img src="images/food/fav.jpg" alt="Ghanaian main course meal" />
+        <img src="images/food/dessert.jpg" alt="Ghanaian dessert presentation" />
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <div class="section-heading">
+        <span>Contact</span>
+        <h2>Reserve a table or send us a message.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Visit Savory Bites</h3>
+          <p>123 Gourmet Street, Flavor Town</p>
+          <p><strong>Hours:</strong> 10:00 AM � 10:00 PM</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+        </div>
+        <form class="contact-form" action="#" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="map-section">
+        <div class="section-heading small">
+          <span>Location</span>
+          <h2>Find us on the map.</h2>
+        </div>
+        <div class="google-map">
+          <iframe
+            title="Savory Bites location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191969492665!2d-122.4194152846817!3d37.77492957975955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c0f604c5b%3A0x8aefb72c5d2e3dba!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <div>
+        <h2>Your Cart</h2>
+        <p>Review your order before checkout</p>
+      </div>
+      <button class="cart-close" id="closeCart" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body">
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">GH₵0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery fee</span>
+          <span id="cartDelivery">GH₵4.99</span>
+        </div>
+        <div class="summary-row total-row">
+          <strong>Grand total</strong>
+          <strong id="cartTotal">GH₵0.00</strong>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-checkout" id="checkoutButton" type="button">Checkout</button>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>Savory Bites</h2>
+        <p>Contemporary dining crafted for memorable nights out.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <a href="#" class="footer-credit" aria-label="Design by Samuel Kay (SKTech)">Design by Samuel Kay (SKTech)</a>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

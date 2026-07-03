@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory Bites Receipt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/receipt.css" />
+</head>
+<body>
+  <main class="receipt-shell">
+    <article class="receipt-paper" id="receiptPaper">
+      <header class="receipt-top">
+        <div class="brand-block">
+          <div class="receipt-logo">SB</div>
+          <div>
+            <h1>Savory Bites</h1>
+            <p>Gourmet Restaurant</p>
+          </div>
+        </div>
+
+        <div class="receipt-meta">
+          <p><strong>Receipt:</strong> <span id="receiptNumber">000000</span></p>
+          <p><strong>Order:</strong> <span id="orderNumber">000000</span></p>
+          <p><strong>Date:</strong> <span id="receiptDate">--</span></p>
+          <p><strong>Time:</strong> <span id="receiptTime">--</span></p>
+        </div>
+      </header>
+
+      <section class="customer-block">
+        <h2>Customer</h2>
+        <p><strong>Name:</strong> <span id="customerName">--</span></p>
+        <p><strong>Phone:</strong> <span id="customerPhone">--</span></p>
+        <p><strong>Address:</strong> <span id="customerAddress">--</span></p>
+      </section>
+
+      <section class="items-block">
+        <h2>Items</h2>
+        <div class="items-header">
+          <span>Qty</span>
+          <span>Item</span>
+          <span>Price</span>
+        </div>
+        <div id="receiptItems" class="receipt-items"></div>
+      </section>
+
+      <section class="totals-block">
+        <div class="total-line"><span>Subtotal</span><strong id="receiptSubtotal">$0.00</strong></div>
+        <div class="total-line"><span>Delivery Fee</span><strong id="receiptDelivery">$0.00</strong></div>
+        <div class="total-line"><span>Discount</span><strong id="receiptDiscount">$0.00</strong></div>
+        <div class="total-line"><span>Tax</span><strong id="receiptTax">$0.00</strong></div>
+        <div class="total-line grand"><span>Grand Total</span><strong id="receiptGrandTotal">$0.00</strong></div>
+      </section>
+
+      <section class="tracker-block">
+        <h2>Order tracker</h2>
+        <div class="order-tracker" id="orderTracker">
+          <div class="tracker-stage" data-stage="pending">
+            <span class="tracker-dot"></span>
+            <span>Pending</span>
+          </div>
+          <div class="tracker-stage" data-stage="accepted">
+            <span class="tracker-dot"></span>
+            <span>Accepted</span>
+          </div>
+          <div class="tracker-stage" data-stage="preparing">
+            <span class="tracker-dot"></span>
+            <span>Preparing</span>
+          </div>
+          <div class="tracker-stage" data-stage="ready">
+            <span class="tracker-dot"></span>
+            <span>Ready</span>
+          </div>
+          <div class="tracker-stage" data-stage="delivered">
+            <span class="tracker-dot"></span>
+            <span>Delivered</span>
+          </div>
+        </div>
+        <div class="tracker-bar">
+          <div class="tracker-progress" id="trackerProgress"></div>
+        </div>
+        <p><strong>Payment:</strong> <span id="receiptPayment">--</span></p>
+        <p><strong>Status:</strong> <span id="receiptStatus">Confirmed</span></p>
+        <div class="qr-placeholder">
+          <img id="whatsappQrCode" src="images/food/frame.png" alt="Scan to send WhatsApp message" />
+          <p class="qr-caption">Scan to message us on WhatsApp</p>
+        </div>
+        <p class="footer-note">Thank you for ordering with Savory Bites. Enjoy your meal!</p>
+      </section>
+    </article>
+
+    <div class="receipt-actions">
+      <button class="btn btn-primary" id="printReceipt">Print Receipt</button>
+      <button class="btn btn-secondary" id="downloadPdf">Download PDF</button>
+      <button class="btn btn-secondary" id="whatsappReceipt">Send to WhatsApp</button>
+    </div>
+    <footer class="receipt-footer">
+      <a href="#" class="footer-credit" aria-label="Design by Samuel Kay (SKTech)">Design by Samuel Kay (SKTech)</a>
+    </footer>
+  </main>
+
+  <script src="js/receipt-page.js"></script>
+</body>
+</html>

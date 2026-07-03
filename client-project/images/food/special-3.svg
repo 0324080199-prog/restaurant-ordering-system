@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Seafood platter">
+  <rect width="480" height="360" fill="#eef5f8" />
+  <ellipse cx="240" cy="260" rx="200" ry="60" fill="#cfe4eb" />
+  <circle cx="200" cy="200" r="32" fill="#f5c19c" />
+  <circle cx="280" cy="180" r="34" fill="#e79f7f" />
+  <path d="M160 220 q50 -30 120 -20 q45 6 70 28" fill="#d0bec5" />
+  <path d="M220 130 q24 -18 50 6" stroke="#6b4b38" stroke-width="10" fill="none" stroke-linecap="round" />
+  <path d="M180 240 c70 10 130 10 190 -5" stroke="#9fbac4" stroke-width="18" fill="none" stroke-linecap="round" />
+</svg>

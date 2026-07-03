@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Cocoa banana fudge dessert">
+  <rect width="480" height="360" fill="#f8f1e9" />
+  <ellipse cx="240" cy="260" rx="170" ry="55" fill="#9e5c37" />
+  <path d="M190 170 c40 -30 90 -28 130 6 c20 18 24 44 10 62 c-12 16 -42 18 -64 6 c-20 -10 -34 -32 -40 -54" fill="#7b4228" />
+  <path d="M225 195 c20 -18 50 -18 70 0" stroke="#3f2214" stroke-width="12" fill="none" stroke-linecap="round" />
+  <circle cx="255" cy="230" r="12" fill="#f2c58a" />
+  <path d="M205 245 c50 -8 90 -3 118 10" stroke="#6d3f2c" stroke-width="14" fill="none" stroke-linecap="round" />
+</svg>

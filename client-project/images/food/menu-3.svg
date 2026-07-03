@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Banku and grilled tilapia">
+  <rect width="480" height="360" fill="#eef4f3" />
+  <path d="M120 240 c90 -80 200 -70 240 0" fill="#d9d3c8" />
+  <path d="M225 170 c10 -20 35 -30 55 -18 c18 12 18 32 4 44 c-25 20 -60 14 -72 -8" fill="#ede5dc" />
+  <path d="M160 210 c60 -30 120 -24 180 0" stroke="#8a5f45" stroke-width="18" fill="none" stroke-linecap="round" />
+  <path d="M170 175 c20 -16 50 -14 74 2" stroke="#664022" stroke-width="14" fill="none" stroke-linecap="round" />
+  <circle cx="310" cy="190" r="12" fill="#e3ba8c" />
+</svg>

@@ -1,0 +1,28 @@
+/* Cart-specific styling separate from the main layout */
+.cart-item-quantity {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-item-quantity button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(247, 181, 0, 0.15);
+  color: #f7b500;
+  cursor: pointer;
+}
+
+.cart-item-quantity span {
+  min-width: 30px;
+  text-align: center;
+}
+
+.empty-cart {
+  padding: 2rem 1rem;
+  color: var(--muted);
+  text-align: center;
+}

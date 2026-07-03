@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Ghanaian dessert presentation">
+  <rect width="560" height="420" fill="#fbf3ed" />
+  <path d="M115 320 q120 -140 240 -110 q120 30 145 110" fill="#d8b18a" />
+  <circle cx="190" cy="220" r="30" fill="#6d3b25" />
+  <circle cx="260" cy="200" r="26" fill="#d28f62" />
+  <circle cx="330" cy="215" r="22" fill="#f4d29e" />
+  <path d="M180 255 q50 -22 98 -10" stroke="#f3e1c8" stroke-width="14" fill="none" stroke-linecap="round" />
+  <path d="M220 180 c20 -18 50 -18 68 0" stroke="#7a4c36" stroke-width="12" fill="none" stroke-linecap="round" />
+  <path d="M220 240 c40 14 80 16 120 4" stroke="#9b5f3c" stroke-width="16" fill="none" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Chocolate mousse">
+  <rect width="480" height="360" fill="#f4e6dc" />
+  <ellipse cx="240" cy="260" rx="180" ry="60" fill="#e3c5ab" />
+  <path d="M190 150 q30 -50 100 -40 q40 6 52 40 q8 28 -18 56 q-18 20 -48 20 q-28 0 -50 -16 q-15 -11 -26 -40" fill="#6b3a24" />
+  <path d="M205 170 c20 -24 55 -24 75 0" stroke="#432a1f" stroke-width="12" fill="none" stroke-linecap="round" />
+  <path d="M240 210 c12 4 20 14 18 26" stroke="#1f0d08" stroke-width="10" fill="none" stroke-linecap="round" />
+  <rect x="182" y="244" width="116" height="14" rx="7" fill="#3e2418" opacity="0.2" />
+</svg>
